@@ -1,0 +1,19 @@
+version: '1.0'
+
+# volumes:
+#   pihole_config:
+#   dnsmasq_config:
+
+services:
+  plex:
+    build: ./plex
+    privileged: true
+    # volumes:
+    #   - 'pihole_config:/etc/pihole'
+    #   - 'dnsmasq_config:/etc/dnsmasq.d'
+    # cap_add:
+    #   - 'NET_ADMIN'
+    # dns:
+    #   - '127.0.0.1'
+    #   - '1.1.1.1'
+    # network_mode: host
